@@ -7,7 +7,7 @@ public class Pedido {
     private Cliente cliente;
     private Endereco enderecoEntrega;
     private List<ItemPedido> items;
-    private double total; // Alterado de Double para double
+    private double total;
 
     public Pedido(int numero, Cliente cliente, ItemPedido item, Endereco endereco) {
         this.numero = numero;
@@ -15,13 +15,11 @@ public class Pedido {
         this.enderecoEntrega = endereco;
         this.items = new ArrayList<>();
         this.addItemPedido(item);
-        this.total = 0.0; // Inicializa o total como 0
+        this.total = 0.0; 
     }
-
     public int getNumero() {
         return numero;
     }
-
     public List<ItemPedido> getItems() {
         return items;
     }
