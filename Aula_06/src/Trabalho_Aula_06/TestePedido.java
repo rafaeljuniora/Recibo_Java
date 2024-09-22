@@ -1,5 +1,4 @@
 package Trabalho_Aula_06;
-
 public class TestePedido {
     public static void main(String[] args) {
         Pedido pedido1=new Pedido (1,new Cliente(new Endereco(
